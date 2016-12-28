@@ -6,5 +6,6 @@ app.use('/js', express.static(__dirname + '/js'));
 // app.use('/css', express.static(__dirname + '/css'));
 app.use('/views', express.static(__dirname + '/views'));
 
-app.use('/', express.static('./')).listen(3000);
-console.log('Client server listening on port 3000 ..\n');
+app.use('/', express.static('./'));
+app.listen(process.env.PORT || 3000);
+console.log('server listening on port '+ process.env.PORT+'/3000 ...');
