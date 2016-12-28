@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hotel Viewer</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,100,700,900' rel='stylesheet' type='text/css'>
+  <!--CSS-->
+  <link rel="stylesheet" href="assets/style/dist/css/dep.min.css">
+  <link rel="stylesheet" href="assets/style/dist/css/core.min.css">
+
+
+  <!--JS-->
+	<!--<script src="assets/js/dist/dep.min.js"></script>-->
+	<script src="assets/js/lib/angular.min.js"></script>
+	<script src="assets/js/lib/angular-ui-router.min.js"></script>
+	<script src="assets/js/lib/ng-rateit.min.js"></script>
+	<script src="assets/js/lib/ngDialog.min.js"></script>
+
+  <!--<script src="app/dist/core.min.js"></script>-->
+
+  <!--App -->
+  <script src="app/app.js"></script>
+  <script src="app/directives.js"></script>
+  <script src="app/factories/hotels.factory.js"></script>
+  <script src="app/controllers/hotels.controller.js"></script>
+  <script src="app/controllers/hotel-view.controller.js"></script>
+  <script src="app/controllers/recent.controller.js"></script>
+  <script src="app/controllers/hotel-edit.controller.js"></script>
+  <script src="app/filters/hotels.filter.js"></script>
+
+
+</head>
+
+<body ng-app="myApp">
+	<!-- wrapper  -->
+	<div id="wrapper">
+		<!--header -->
+		<header>
+		  <navigation-bar></navigation-bar>
+		</header>
+		<!-- main  -->
+		 <main class="main" ui-view>
+		 </main>
+	</div>
+</body>
+</html>
